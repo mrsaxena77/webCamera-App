@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 15px;
+    justify-content: space-evenly;
+}
+
+
+.media-container{
+    margin-top: 5px;
+    height: 20rem;
+    width: 18rem;
+    border: 2px solid;
+}
+
+
+.media{
+    height: 80%;
+    width: 100%;
+    border: 1px solid;
+}
+
+
+button{
+    height: 10%;
+    width: 100%;
+    border: 1px solid;
+}
+
+img,video{
+    height: 100%;
+    width: 100;
+}
+
+    </style>
+</head>
+
+<body>
+
+    <!-- <div class="media-container">
+         <div class="media">
+            <video src"" autoplay loop muted controls></video>
+        </div>
+        <button class="download">Save to device</button>
+        <button class="delete">Delete</button>
+    </div> -->
+
+    <script src="gallery.js"></script>
+    <script>
+        setTimeout(function (){
+            viewMedia();
+        }, 100);
+    </script>
+</body>
+
+</html>

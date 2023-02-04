@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="video-container">
+        <video autoplay autoplay style="transform: scale(1);"></video>
+    </div>
+
+    <button id="record">
+        <div></div>
+    </button>
+
+    <button id="capture">
+        <div></div>
+    </button>
+
+    <button id="galleryBtn">Gallery</button>
+
+    <div class="fil-cont">
+
+        <div class="filter">
+            Normal</div>
+
+        <div class="filter" style="
+        background-color: #716fd36d;
+        background-blend-mode: luminosity;
+        ">Hudson</div>
+
+        <div class="filter" style="
+        background-color: #c658c261;
+        background-blend-mode: luminosity;
+        ">Pop</div>
+
+        <div class="filter" style="
+        background-color: #bb86c556;
+        background-blend-mode: luminosity;
+        ">Lark</div>
+
+        <div class="filter" style="
+        background-color: rgba(222, 31, 47, 0.37);
+        background-blend-mode: luminosity;
+        ">Amaro</div>
+
+        <div class="filter" style="
+        background-color: #525556b7;
+        background-blend-mode: luminosity;
+        ">B&W</div>
+    </div>
+
+    <div class="zoomCont" id="zoomin">
+        <div>+</div>
+    </div>
+
+    <div class="zoomCont" id="zoomout">
+        <div>-</div>
+    </div>
+
+    <script src="gallery.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

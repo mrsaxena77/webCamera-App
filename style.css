@@ -1,0 +1,195 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-color: rgb(76, 73, 73);
+}
+
+#record div{
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 50%;
+    background-color: azure;
+    position: fixed;
+    top: 60.5vh;
+    right: 74px;
+    background-color: rgba(247, 20, 20, 0.804);
+}
+#record{
+    z-index: 5;
+    height: 5.6rem;
+    width: 5.6rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    position: fixed;
+    top: 58.4vh;
+    right: 57.1px;
+    border: 5px solid rgb(146, 208, 235);
+    background-color: rgb(151, 140, 140);
+}
+
+#capture div{
+    height: 2rem;
+    width: 2rem;
+    border-radius: 50%;
+    background-color: rgb(228, 244, 10);
+    position: fixed;
+    top: 39.9vh;
+    right: 90.85px;
+    /* background-color: rgb(114, 135, 148); */
+}
+
+#capture{
+    z-index: 5;
+    height: 3.9rem;
+    width: 3.9rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    background-color: gainsboro;
+    position: fixed;
+    top: 38vh;
+    right: 75.8px;  
+    border: 5px solid rgb(234, 242, 76);
+    background-color: rgba(155, 151, 151, 0.795);
+}
+
+#video-container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden; /* Statement-1 */
+}
+
+video{
+    height: 100vh;  /* 100% of parent element or div or #video-container */
+    width: 100vw;   /* 100% of parent element or div or #video-container */
+    /* by these properties we are getting scroll bars... to get rid of it we will use #video-container{Statement-1}*/
+    transform: scale(1);
+}
+
+@keyframes zoom{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.3);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+/* creating class so that it can be apply on #record -> div.   */
+.rec-anime{
+    animation: zoom 1s infinite;
+}
+
+/* creating class so that it can be apply on #capture -> div.   */
+.cap-anime{
+    animation: zoom 0.3s;
+}
+
+.fil-cont{
+    z-index: 5;
+    height: 30rem;
+    width: 6rem;
+    border: 1px solid rgb(19, 19, 19);
+    position: fixed;
+    top: 12vh;
+    left: 20px;
+}
+
+.filter{
+    height: calc(100% / 6);
+    width: 100%;
+    border: 1px solid rgb(14, 14, 14);
+    background-image: url(https://dlcdnrog.asus.com/rog/media/1589570302548.jpg);
+    background-size: cover;
+    bottom: 0;
+    color: #f7f1e3; 
+}
+
+.filter-div{
+    z-index: 0;
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0; 
+}
+
+#zoomin{
+    z-index: 5;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    position: fixed;
+    top: 12vh;
+    right: 130px;
+    border: 5px solid rgb(97, 97, 140);
+    background-color: wheat;
+}
+#zoomin div{
+    height: 2.9rem;
+    width: 2.9rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: fixed;
+    top: 13.6vh;
+    right: 142.2px ;
+    background-color: black;
+    color: wheat;
+    font-size: 2.3rem;
+    text-align: center;
+    font-weight: bold;
+}
+
+#zoomout{
+    z-index: 5;
+    height: 4.5rem;
+    width: 4.5rem;
+    border-radius: 50%;
+    outline: none;
+    border: none;
+    position: fixed;
+    top: 12vh;
+    right: 20px;
+    border: 5px solid rgb(97, 97, 140);
+    background-color: wheat;
+}
+#zoomout div{
+    height: 2.9rem;
+    width: 2.9rem;
+    border-radius: 50%;
+    border: 1px solid black;
+    position: fixed;
+    top: 13.6vh;
+    right: 32.5px ;
+    background-color: black;
+    color: wheat;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+.zoom-anime{
+    animation: zoom 0.1s;
+}
+
+#galleryBtn{
+    position: fixed;
+    z-index: 5;
+    bottom: 5rem;
+    right: 4rem;
+    height: 4rem;
+    width: 5rem;
+}
+
+#camera{
+    position: fixed;
+    bottom: 5rem;
+    right: 4rem;
+    height: 4rem;
+    width: 5rem;
+}
