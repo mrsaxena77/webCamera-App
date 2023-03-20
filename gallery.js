@@ -1,5 +1,5 @@
 let req = indexedDB.open("Camera", 1);
-let body = document.querySelector("body");  
+let Body = document.querySelector("body");  
 let db;
   
 req.addEventListener("success", function(){
@@ -98,7 +98,7 @@ function viewMedia(){
                 e.currentTarget.parentElement.remove();
             });
 
-            body.append(div);
+            Body.append(div);
             cursor.continue();
         }
     });
