@@ -31,10 +31,12 @@ body{
 }
 
 #capture div{
-    height: 2rem;
-    width: 2rem;
-    border-radius: 50%;
-    background-color: rgb(228, 244, 10);
+    height: 0;
+    width: 0;
+    /* border-radius: 50%; */
+    border-left: 1rem solid transparent;
+     border-right: 1rem solid transparent;
+     border-bottom: 2rem solid rgb(228, 244, 10);
     position: fixed;
     top: 39.9vh;
     right: 90.85px;
@@ -52,7 +54,7 @@ body{
     position: fixed;
     top: 38vh;
     right: 75.8px;  
-    border: 5px solid rgb(234, 242, 76);
+    border: 5px solid rgb(224, 230, 233);
     background-color: rgba(155, 151, 151, 0.795);
 }
 
